@@ -1,0 +1,188 @@
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 img {
+  width: 200px;
+}
+
+h2 {
+  color: #2574D0;
+  text-align: center;
+}
+
+.hide {
+  display: none !important;
+}
+
+.wrap {
+  position: relative;
+  min-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrap button {
+  padding: 15px 25px;
+  margin: 0 5px;
+  background: #566270;
+  border-radius: 2px;
+  font-size: 16px;
+  position: relative;
+  border: 0;
+  text-align: center;
+  color: #FFF;
+  vertical-align: middle;
+}
+
+.wrap button:hover {
+  opacity: 0.8;
+}
+
+.wrap .step1 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.wrap .step1 section {
+  margin-bottom: 50px;
+}
+
+.wrap .step1 section button {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FDD692;
+  color: #FFF;
+  font-size: 25px;
+}
+
+.wrap .step1 section .len {
+  display: inline-block;
+  width: 30px;
+  font-size: 20px;
+}
+
+.wrap .step2 section {
+  margin-bottom: 50px;
+}
+
+.wrap .step2 section input {
+  width: 90px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.wrap .step2 section input:focus {
+  outline: 0;
+}
+
+.wrap .step2 section .user input {
+  background: #EFE8D8;
+  color: #FE4552;
+  opacity: 0.6;
+}
+
+.wrap .step2 section .user input.clickable {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.wrap .step2 section .user input.clickable.active {
+  background: #E54B4B;
+  color: #FFF;
+}
+
+.wrap .step2 section .case input {
+  background: #EFE8D8;
+  color: #FE4552;
+  opacity: 0.6;
+}
+
+.wrap .step2 section .case input.readonly {
+  opacity: 1;
+}
+
+.wrap .step2 section .case input.readonly.active {
+  background: #E54B4B;
+  color: #FFF;
+}
+
+.wrap .step2 .winner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.7;
+  z-index: 3;
+  padding-top: 200px;
+}
+
+.wrap .step2 .winner .cont {
+  width: 20%;
+  max-height: 300px;
+  overflow: auto;
+  margin: auto;
+  background: #fff;
+  padding: 20px 20px 20px 50px;
+}
+
+.wrap .step2 .winner .cont p {
+  padding: 0;
+  margin: 20px 0;
+  color: #000;
+  font-size: 30px;
+  text-align: left;
+}
+
+.wrap .step2 .reset {
+  background: #566270;
+}
+
+.wrap .ladder-wrapper {
+  position: relative;
+  height: 500px;
+}
+
+.wrap .ladder-wrapper #ladder,
+.wrap .ladder-wrapper #ladder-result {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -500px;
+}
+
+.wrap .ladder-wrapper #ladder-result {
+  z-index: 1;
+}

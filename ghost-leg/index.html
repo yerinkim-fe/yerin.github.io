@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="assets/styles/index.css">
+  <title>Vanilla Coding | Bootcamp Prep</title>
+</head>
+<body>
+
+  <div class="wrap">
+
+    <h1>사다리게임</h1>
+
+    <div class="step1">
+      <section>
+        <button class="minus">-</button>
+        <span class="len">2</span>
+        <button class="plus">+</button>
+      </section>
+
+      <button class="start">START</button>
+    </div>
+
+    <div class="step2">
+      <section>
+        <div class="user"></div>
+        <div class="ladder-wrapper">
+          <canvas id="ladder" width="1000" height="500"></canvas>
+          <canvas id="ladder-result" width="1000" height="500"></canvas>
+        </div>
+        <div class="case"></div>
+      </section>
+
+      <button class="reset hide">BACK</button>
+      <button class="next hide">PLAY</button>
+
+      <button class="result hide">RESULT</button>
+
+      <section class="winner hide">
+        <div class="cont"></div>
+      </section>
+    </div>
+  </div>
+  
+  <script src="apps/index.js"></script>
+
+</body>
+</html>
